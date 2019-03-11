@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="src/css/style.css" rel="stylesheet">
+
+    <title>Lyec | Developers</title>
+</head>
+<body >
+<header>
+    <div>
+        <div class="header_nav">
+            <div class="header_nav ul li">
+                <ul class="header_nav ul li a">
+                    <li><a href="#about">ABOUT US </a></li>
+                    <li><a href="#service">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+             </div>
+        </div>
+    </div>
+</header>
+<section id="about" class="about_container">
+    <div class="row">
+        <div class="column">
+            <div class="mySlides fade">
+                <img src="src/img/img2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="src/img/img6.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="src/img/img5.jpg" style="width:100%">
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+
+    </div>
+</section>
+<section id="service" class="service_container">
+    <div class="main_title h2">
+        <h2>Services</h2>
+    </div>
+    <div>
+        <div class="row">
+            <div class="service_column">
+                <figure>
+                    <img src="src/img/img1.jpg">
+                    <figcaption class="overlay">
+                        Julie's Rabbit Ears
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="service_column">
+                <figure>
+                    <img src="src/img/img2.jpg">
+                    <figcaption>Big Eyed Buggy</figcaption>
+                </figure>
+            </div>
+            <div class="service_column">
+                <figure>
+                    <img src="src/img/img3.jpg">
+                    <figcaption>The Saint Doggo</figcaption>
+                </figure>
+            </div>
+            <div class="service_column">
+                <figure>
+                    <img src="src/img/img4.jpg">
+                    <figcaption>Big Eyed Buggy</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="portfolio" class="portfolio_container">
+    <div class="main_title h2">
+        <h2>Portfolio</h2>
+    </div>
+    <div class="gallery">
+        <figure>
+            <img src="src/img/img10.jpg">
+            <figcaption>
+                Julie's Rabbit Ears
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="src/img/img11.jpg">
+            <figcaption>The Innocent Look</figcaption>
+        </figure>
+        <figure>
+            <img src="src/img/img8.jpg">
+            <figcaption>Big Eyed Buggy</figcaption>
+        </figure>
+        <figure>
+            <img src="src/img/img9.jpg">
+            <figcaption>The Saint Doggo</figcaption>
+        </figure>
+        <figure>
+            <img src="src/img/img7.jpg">
+            <figcaption>Big Eyed Buggy</figcaption>
+        </figure>
+        <figure>
+            <img src="src/img/img6.jpg">
+            <figcaption>
+                Julie's Rabbit Ears
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="src/img/img1.jpg">
+            <figcaption>The Innocent Look</figcaption>
+        </figure>
+        <figure>
+            <img src="src/img/img4.jpg">
+            <figcaption>Big Eyed Buggy</figcaption>
+        </figure>
+
+    </div>
+</section>
+<section id="news" class="news_container">
+    <div class="main_title h2">
+        <h2>News</h2>
+    </div>
+    <div>
+        <div class="row">
+            <div class="news_column"></div>
+            <div class="news_column"></div>
+            <div class="news_column"></div>
+            <div class="news_column"></div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact_container">
+    <div class="main_title h2">
+        <h2>Contact Us</h2>
+    </div>
+    <div >
+        <div class="row">
+            <div class="contact_column">
+                <div>
+                    <h3>Send US a Message</h3>
+                </div>
+                <div class="container">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <h3>Find US</h3>
+                </div>
+                <div id="googleMap" style="width:100%;height:480px;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer >
+    <div>
+        <div class="footer_nav">
+            <div class="footer_nav ul li">
+                <ul class="footer_nav ul li a">
+                    <li><a href="#about">ABOUT US </a></li>
+                    <li><a href="#service">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="src/js/slideshow.js"></script>
+<script type="text/javascript" src="src/js/maps.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKHfzcyLueAXf6g6n34faD06boL0NW-7Q&callback=myMap"></script>
+</body>
+</html>
